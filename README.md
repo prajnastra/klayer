@@ -38,6 +38,15 @@ cp target/release/klayer ~/.local/bin/
 ```
 
 ## Usage
+
+### See available args
+
 ```bash
-klayer hello.mp3
+klayer -h
+```
+
+### Play music
+
+```bash
+klayer -p hello.mp3
 ```
