@@ -19,7 +19,7 @@ fn main() {
     let (_stream, stream_handle) = OutputStream::try_default().unwrap();
     let sink = Sink::try_new(&stream_handle).unwrap();
 
-    // add a dummu source
+    // add a source
     let file = BufReader::new(File::open(args.path).unwrap());
     let source = Decoder::new(file).unwrap();
 
